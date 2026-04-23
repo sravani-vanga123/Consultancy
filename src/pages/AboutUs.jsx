@@ -1,0 +1,100 @@
+import React from "react";
+import MoinImage from "../assets/moin.png";
+import VisionMission from "../components/Aboutvision";
+const AboutUs = () => {
+  return (
+    <div
+      style={{
+        width: "100%",
+        minHeight: "100vh", // 👈 full page color
+         background: "linear-gradient(135deg, #e6d9f5, #f3e8d9)",
+        fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
+        padding: "20px 0",
+      }}
+    >
+      {/* CENTER CONTAINER */}
+      <div
+        style={{
+          maxWidth: "1200px",
+          margin: "0 auto",
+          padding: "0 20px",
+        }}
+      >
+        {/* TITLE */}
+        <h1
+          style={{
+            textAlign: "center",
+            marginBottom: "20px",
+          }}
+        >
+          ABOUT MOIN CONSULTANCY
+        </h1>
+
+        {/* TWO COLUMN */}
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "20px",
+            alignItems: "flex-start",
+          }}
+        >
+          {/* LEFT IMAGE */}
+          <div
+            style={{
+              flex: "1 1 350px",
+              textAlign: "center",
+            }}
+          >
+            <img
+              src={MoinImage}
+              alt="Director"
+              style={{
+                width: "60%",
+                height: "300px",
+                objectFit: "cover",
+                borderRadius: "15px",
+                boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
+              }}
+            />
+
+            <h3 style={{ marginTop: "10px" }}>Shaik Khaja Moin</h3>
+            <p style={{ fontWeight: "bold" }}>Director</p>
+
+            <button
+              style={{
+                backgroundColor: "#D8B4FE",
+                color: "#fff",
+                border: "none",
+                padding: "10px 25px",
+                borderRadius: "6px",
+                cursor: "pointer",
+              }}
+            >
+              Contact Director
+            </button>
+          </div>
+
+          {/* RIGHT TEXT */}
+          <div
+            style={{
+              flex: "2 1 500px",
+              color: "black",
+              lineHeight: "1.8",
+              fontSize: "20px",
+            }}
+          >
+            <p>Moin Consultancy is a dedicated international overseas educational agency committed to helping students choose the right careers and pave their path to a bright future. We specialize in guiding students through their academic journey by offering personalized career counseling, expert training in software courses, and enhancing communication skills.</p>
+          <p>With a strong global network of partners in Australia, United States, New Zealand, Canada, Europe, Ireland, and United Kingdom, we connect students with top institutions and diverse opportunities, making the dream of studying abroad a reality.</p>
+          <p>At Moin Consultancy, every student deserves the right guidance and skills to achieve their goals. Our commitment goes beyond helping students study abroad and we equip them with the tools to excel in a multicultural environment and confidently step into their future careers.</p>
+          </div>
+        </div>
+      </div>
+
+ <VisionMission />
+ </div>
+
+  );
+};
+
+export default AboutUs;
