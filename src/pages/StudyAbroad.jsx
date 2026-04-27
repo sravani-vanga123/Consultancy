@@ -145,7 +145,9 @@ function StudyAbroad() {
       margin: "0 auto 15px",
       fontSize: isMobile ? "20px" : "30px"
     }
+    
   };
+
 
   // ✅ Data
   const rows = [
@@ -219,22 +221,36 @@ function StudyAbroad() {
           <h2>HOW WE WORK</h2>
           <h1>Streamlined Steps for Your Study Abroad Journey</h1>
 
-          <div style={styles.stepsRow}>
-            {[
-              { icon: faUsers, step: "Step01", title: "Education Consultation" },
-              { icon: faFileAlt, step: "Step02", title: "Study Plan" },
-              { icon: faTicketAlt, step: "Step03", title: "Application Support" },
-              { icon: faHandshake, step: "Step04", title: "Pre-Departure Prep" }
-            ].map((item, idx) => (
-              <div key={idx}>
-                <div style={styles.stepCircle}>
-                  <FontAwesomeIcon icon={item.icon} />
-                </div>
-                <h3>{item.step}</h3>
-                <p>{item.title}</p>
-              </div>
-            ))}
-          </div>
+    <div style={styles.stepsRow}>
+  {[
+    { icon: faUsers, step: "Step1", title: "Education Consultation" },
+    { icon: faFileAlt, step: "Step2", title: "Study Plan" },
+    { icon: faTicketAlt, step: "Step3", title: "Application Support" },
+    { icon: faHandshake, step: "Step4", title: "Pre-Departure Prep" }
+  ].map((item, idx, arr) => (
+    <React.Fragment key={idx}>
+      
+      {/* Step */}
+      <div style={styles.stepItem}>
+        <div style={styles.stepCircle}>
+          <FontAwesomeIcon icon={item.icon} />
+        </div>
+        <h3>{item.step}</h3>
+        <p>{item.title}</p>
+      </div>
+
+      {/* Dotted Connector */}
+      {idx !== arr.length - 1 && !isMobile && (
+        <div style={styles.dots}></div>
+      )}
+
+    </React.Fragment>
+  ))}
+</div>
+      
+      
+           
+         
         </div>
       </div>
 

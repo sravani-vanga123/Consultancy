@@ -1,53 +1,65 @@
 import React from "react";
-import CarreercounsellingImage from "../assets/Career-Councelling1.png";
+import CareerImage1 from "../assets/career1.png";
+import CareerImage2 from "../assets/career2.png";
 
 const CareerCounsellingPage = () => {
-  // First-level styles (same structure as Distance Education page)
+  const isMobile = window.innerWidth < 768;
+
   const styles = {
     page: {
-      backgroundColor: "beige",
+      backgroundColor: "#f5f0e6",
       minHeight: "100vh",
-      fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-      padding: 0,
+      width: "100%",
       margin: 0,
+      padding: 0,
+      fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
     },
+
     container: {
-      padding: "0px",
-      textAlign: "left",
+      padding: "20px",
       maxWidth: "1200px",
       margin: "0 auto",
+      textAlign: "left",
     },
+
     mainTitle: {
       textAlign: "center",
-      margin: 0,
-      padding: "0px 0 0px 0",
+      margin: "20px 0",
     },
-    heroImage: {
-      width: "100%",
-      maxWidth: "1000px",
-      height: "500px",
+
+    imageContainer: {
+      display: "flex",
+      flexDirection: isMobile ? "column" : "row",
+      gap: "10px",
+      marginBottom: "30px",
+    },
+
+    image: {
+      width: isMobile ? "100%" : "50%",
+      height: "350px",
       objectFit: "cover",
-      display: "block",
-      margin: "0 auto 30px auto",
+      borderRadius: "12px",
     },
+
     sectionTitle: {
-      textAlign: "left",
-      marginTop: "30px",
-      marginBottom: "20px",
+      marginTop: "25px",
+      marginBottom: "10px",
+      color: "black",
     },
+
     paragraph: {
       marginBottom: "15px",
       lineHeight: "1.6",
-      padding: "0 20px",
     },
+
     listTitle: {
       marginTop: "20px",
       marginBottom: "10px",
-      padding: "0 20px",
     },
+
     list: {
-      paddingLeft: "40px",
-      marginBottom: "0px",
+      paddingLeft: "25px",
+      lineHeight: "1.6",
     },
   };
 
@@ -56,11 +68,20 @@ const CareerCounsellingPage = () => {
       <div style={styles.container}>
         <h1 style={styles.mainTitle}>Career Counselling</h1>
 
-        <img
-          src={CarreercounsellingImage}
-          alt="Career Counselling"
-          style={styles.heroImage}
-        />
+        {/* IMAGE SECTION (2 IMAGES) */}
+        <div style={styles.imageContainer}>
+          <img
+            src={CareerImage1}
+            alt="Career Counselling 1"
+            style={styles.image}
+          />
+
+          <img
+            src={CareerImage2}
+            alt="Career Counselling 2"
+            style={styles.image}
+          />
+        </div>
 
         <h2 style={styles.sectionTitle}>
           “Why So Many Students Feel Stuck Today”

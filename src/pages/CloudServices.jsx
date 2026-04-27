@@ -1,139 +1,138 @@
 import React from "react";
+import CloudImage1 from "../assets/cloud2.png";
+import CloudImage2 from "../assets/cloud5.png";
 
-const styles = {
-  page: {
-  minHeight: "100vh",
-   background: "linear-gradient(135deg, #f0e6ff, #f5e6d3)",
-},
-  section: {
-    display: "flex",
-    padding: "80px",
-    gap: "60px",
-    alignItems: "center",
-    backgroundcolor: "red",
-    flexWrap: "wrap",
-  },
-  small: {
-    letterSpacing: "3px",
-    opacity: 0.7,
-  },
+const CloudServicesPage = () => {
+  const isMobile = window.innerWidth < 768;
 
-  heading: {
-    fontSize: "36px",
-    margin: "10px 0",
-  },
+  const styles = {
+    page: {
+      minHeight: "100vh",
+      background: "linear-gradient(135deg, #f0e6ff, #f5e6d3)",
+      padding: "40px 20px",
+    },
 
-  tag: {
-    border: "1px solid rgba(255,255,255,0.4)",
-    padding: "6px 12px",
-    marginRight: "10px",
-    borderRadius: "6px",
-    fontSize: "13px",
-  },
+    section: {
+      display: "flex",
+      flexDirection: isMobile ? "column" : "row",
+      gap: "60px",
+      alignItems: "center",
+      maxWidth: "1200px",
+      margin: "0 auto",
+    },
 
-  globe: {
-    position: "absolute",
-    bottom: "20px",
-    right: "20px",
-    fontSize: "40px",
-    opacity: 0.6,
-  },
+    imageContainer: {
+      display: "flex",
+      flexDirection: "column",
+      gap: "15px",
+      flex: 1,
+    },
 
-  content: {
-    maxWidth: "600px",
-     fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-  },
+    image: {
+      width: "100%",
+      height: "250px",
+      objectFit: "cover",
+      borderRadius: "12px",
+    },
 
-title: {
-  fontSize: "30px",
-  color: "black",
-  fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-  margin: 0,         
-},
+    content: {
+      flex: 1,
+      fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
+    },
 
-  text: {
-    margin: "20px 0",
-    color: "#666",
-    lineHeight: "1.6",
-     fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-  },
+    title: {
+      fontSize: "36px",
+      color: "#111",
+      marginTop: "-60px",
+      marginBottom: "10px",
+    },
 
-  list: {
-    listStyle: "none",
-    padding: 0,
-     fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-  },
+    text: {
+      margin: "0px 0",
+      color: "black",
+      lineHeight: "1.6",
+    },
 
-  listItem: {
-    margin: "12px 0",
-    display: "flex",
-    alignItems: "center",
-    gap: "10px",
-     fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-  },
+    list: {
+      listStyle: "none",
+      padding: 0,
+    },
 
-  check: {
-    width: "20px",
-    height: "20px",
-    borderRadius: "50%",
-    background: "#7f00ff",
-    color: "white",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    fontSize: "12px",
-     fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-  },
+    listItem: {
+      margin: "12px 0",
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+    },
 
-  button: {
-    marginTop: "25px",
-    display: "inline-block",
-    padding: "12px 25px",
-    background: "linear-gradient(45deg, #7f00ff, #a64bf4)",
-    color: "white",
-    borderRadius: "6px",
-    textDecoration: "none",
-     fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-  },
-};
-const CloudServicesPage = () =>  {
+    check: {
+      width: "20px",
+      height: "20px",
+      borderRadius: "50%",
+      background: "#7f00ff",
+      color: "white",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      fontSize: "12px",
+    },
+
+    button: {
+      marginTop: "25px",
+      display: "inline-block",
+      padding: "12px 25px",
+      background: "linear-gradient(45deg, #7f00ff, #a64bf4)",
+      color: "white",
+      borderRadius: "6px",
+      textDecoration: "none",
+      fontWeight: "bold",
+    },
+  };
+
   return (
-    <div style={styles.page}> 
-
+    <div style={styles.page}>
       <div style={styles.section}>
-        
+
+        {/* LEFT: IMAGES (same WebDevelopment style) */}
+        <div style={styles.imageContainer}>
+          <img src={CloudImage1} alt="cloud1" style={styles.image} />
+          <img src={CloudImage2} alt="cloud2" style={styles.image} />
+        </div>
+
+        {/* RIGHT: CONTENT */}
         <div style={styles.content}>
           <h1 style={styles.title}>Cloud Solutions</h1>
 
           <p style={styles.text}>
-         Scale effortlessly with enterprise-grade cloud infrastructure. We architect, migrate, and manage cloud environments that are reliable, secure, and cost-optimized.
+            Scale effortlessly with enterprise-grade cloud infrastructure.
+            We design, migrate, and manage secure and cost-efficient cloud systems.
           </p>
 
           <ul style={styles.list}>
             {[
               "Cloud Migration & Strategy Consulting",
-"AWS, Azure & Google Cloud Architecture",
-"Serverless Application Development",
-"Cloud Storage & Backup Solutions",
-"DevOps & CI/CD Pipeline Setup",
-"Cloud Cost Optimization & Monitoring",
-"Managed Cloud Services & 24/7 Support"
-            ].map((item, index) => (
-              <li key={index} style={styles.listItem}>
-                <span style={styles.check}>✔</span> {item}
+              "AWS, Azure & Google Cloud Architecture",
+              "Serverless Application Development",
+              "Cloud Storage & Backup Solutions",
+              "DevOps & CI/CD Pipeline Setup",
+              "Cloud Cost Optimization & Monitoring",
+              "Managed Cloud Services & 24/7 Support",
+            ].map((item, i) => (
+              <li key={i} style={styles.listItem}>
+                <span style={styles.check}>✔</span>
+                {item}
               </li>
             ))}
           </ul>
 
-          <a href="#" style={styles.button}>GET A QUOTE</a>
+          <a href="#" style={styles.button}>
+            GET A QUOTE
+          </a>
         </div>
 
       </div>
-
     </div>
   );
 };
- 
-
 
 export default CloudServicesPage;

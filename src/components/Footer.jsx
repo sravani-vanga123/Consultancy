@@ -64,7 +64,7 @@ const Footer = () => {
   };
 
   const bottomLogoStyle = {
-    width: "120px",
+    width: "200px",
     objectFit: "contain",
   };
 

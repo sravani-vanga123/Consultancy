@@ -1,32 +1,44 @@
 import React from "react";
-import ieltsImage from "../assets/ielts.png";
+import IeltsImage1 from "../assets/ielts1.PNG";
+import IeltsImage2 from "../assets/ielts22.png";
 
 const IeltsPage = () => {
-  // 🔹 Styles object
+  const isMobile = window.innerWidth < 768;
+
   const styles = {
-    container: {
+    page: {
+      backgroundColor: "#f5f0e6",
+      minHeight: "100vh",
+      width: "100%",
       margin: 0,
       padding: 0,
       fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-      backgroundColor: "beige",
-
-       minHeight: "100vh", 
-       padding: "10px",
     },
 
-    title: {
-      margin: 0,
-      fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-      color: "black",
+    container: {
+      padding: "20px",
+      maxWidth: "1200px",
+      margin: "0 auto",
+      textAlign: "left",
+    },
+
+    mainTitle: {
       textAlign: "center",
+      margin: "20px 0",
+    },
+
+    imageContainer: {
+      display: "flex",
+      flexDirection: isMobile ? "column" : "row",
+      gap: "10px",
+      marginBottom: "30px",
     },
 
     image: {
-      width: "100%",
-      maxWidth: "1500px",
-      height: "300px",
-      margin: 0,
-      display: "block",
+      width: isMobile ? "100%" : "50%",
+      height: "350px",
+      objectFit: "cover",
+      borderRadius: "12px",
     },
 
     button: {
@@ -37,64 +49,55 @@ const IeltsPage = () => {
       border: "none",
       borderRadius: "6px",
       cursor: "pointer",
-      margin: "20px auto 30px auto",
-      fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
+      margin: "10px auto 30px",
       display: "block",
     },
 
-    content: {
-      fontSize: "18px",
-      lineHeight: "1.8",
-      textAlign: "left",
-      maxWidth: "900px",
-      margin: "20px auto",
-      paddingLeft: "40px",
-      paddingRight: "60px",
-      fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
+    sectionTitle: {
+      marginTop: "25px",
+      marginBottom: "10px",
       color: "black",
+    },
+
+    paragraph: {
+      marginBottom: "15px",
+      lineHeight: "1.7",
     },
   };
 
   return (
-    <div style={styles.container}>
-      {/* Heading */}
-      <h1 style={styles.title}>IELTS</h1>
+    <div style={styles.page}>
+      <div style={styles.container}>
+        <h1 style={styles.mainTitle}>IELTS</h1>
 
-      {/* Image */}
-      <img
-        src={ieltsImage}
-        alt="IELTS Coaching"
-        style={styles.image}
-      />
+        {/* IMAGE SECTION */}
+        <div style={styles.imageContainer}>
+          <img
+            src={IeltsImage1}
+            alt="IELTS Training 1"
+            style={styles.image}
+          />
+          <img
+            src={IeltsImage2}
+            alt="IELTS Training 2"
+            style={styles.image}
+          />
+        </div>
 
-      {/* Button */}
-      <button style={styles.button}>Book Free Demo Classes</button>
+        {/* CTA BUTTON */}
+        <button style={styles.button}>Book Free Demo Classes</button>
 
-      {/* Content */}
-      <div style={styles.content}>
-        <h2>IELTS</h2>
-        <p>
-          Moin Consultancy offers specialized IELTS preparation courses designed
-          to help you succeed in all four sections: Listening, Reading, Writing,
-          and Speaking. Our experienced trainers provide individualized coaching,
-          focusing on test-taking strategies, time management, and building your
-          language skills. With practice tests, feedback sessions, and
-          personalized learning plans, we ensure you’re fully equipped to reach
-          your target band score, increasing your chances of studying or working
-          abroad. Start your journey to IELTS success with us!
+        <h2 style={styles.sectionTitle}>IELTS Coaching</h2>
+        <p style={styles.paragraph}>
+         Moin Consultancy offers specialized IELTS preparation courses designed to help you succeed in all four sections: Listening, Reading, Writing, and Speaking. Our experienced trainers provide individualized coaching, focusing on test-taking strategies, time management, and building your language skills. With practice tests, feedback sessions, and personalized learning plans, we ensure you’re fully equipped to reach your target band score, increasing your chances of studying or working abroad. Start your journey to IELTS success with us!
         </p>
 
-        <h2>IELTS Training</h2>
-        <p>
-          At Moin Consultancy, our IELTS training program is designed to help you
-          master the exam and achieve your desired band score. Our skilled
-          instructors offer personalized coaching across all test sections—
-          Listening, Reading, Writing, and Speaking. We provide targeted practice
-          exercises, mock tests, and strategic feedback to enhance your
-          performance. With our comprehensive approach and flexible schedules,
-          you’ll be well-prepared for both academic and general IELTS exams,
-          opening doors to study or work abroad.
+        
+        <h2 style={styles.sectionTitle}>IELTS Training</h2>
+        <p style={styles.paragraph}>
+          At Moin Consultancy, our IELTS training program is designed to help you master the exam and achieve your desired band score. Our skilled instructors offer personalized coaching across all test sections— Listening, Reading, Writing, and Speaking. We provide targeted practice exercises, mock tests, and strategic feedback to enhance your performance. With our comprehensive approach and flexible schedules, you’ll be well-prepared for both academic and general IELTS exams, opening doors to study or work abroad.
         </p>
+
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 
 // Import images
-import StudyAbroadImg from "../assets/study-abroad1.png";
+import StudyAbroadImg from "../assets/study-Abroad1.png";
 import CareerCounsellingImg from "../assets/career-councelling1.png";
 import InternshipImg from "../assets/intern.png";
 import RecruitmentImg from "../assets/r.png";
