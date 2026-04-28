@@ -64,6 +64,10 @@ const BlogPage = () => {
       color: "#ffffff",
       lineHeight: "1.6",
     },
+
+   ulstyles:{
+  color:"white",
+}
   };
 
   return (
@@ -77,13 +81,13 @@ const BlogPage = () => {
       <div style={styles.page}>
         {/* HEADER */}
         <div style={styles.header}>
-          <h2>📝 Moin Consultancy Blog</h2>
+          <h2> Moin Consultancy Blog</h2>
           <p>Insights, guides, and expert advice to help you make informed decisions about your education and career journey.</p>
         </div>
 
         {/* ================= CARD 1 ================= */}
         <div style={styles.card}>
-          <div style={{ fontSize: "28px" }}>🌍</div>
+          <div style={{ fontSize: "28px" }}> </div>
 
           <h3 style={styles.title}>
             Why Study Abroad? Top Reasons to Take the Leap
@@ -154,17 +158,15 @@ const BlogPage = () => {
 
         {/* ================= CARD 2 ================= */}
         <div style={styles.card}>
-          <div style={{ fontSize: "28px" }}>🎓</div>
+          <div style={{ fontSize: "28px" }}></div>
 
           <h3 style={styles.title}>
-            Credit Transfer Programs: Complete Your Degree Abroad
+            Credit Transfer Program for Engineering Students (As per UGC Guidelines) 
           </h3>
 
           <div style={styles.meta}>April 5, 2026 </div>
 
-          <p style={styles.desc}>
-           Already started your degree in India? Credit transfer programs let you complete your education at a top international university without starting over.
-          </p>
+          
 
           <div
             style={styles.readMore}
@@ -175,43 +177,56 @@ const BlogPage = () => {
 
           {showCreditTransfer && (
             <div>
-              <h4 style={styles.sectionTitle}>
-                What is a Credit Transfer Program?
-              </h4>
+             
               <p style={styles.paragraph}>
-                A credit transfer program allows students to transfer academic credits earned at one institution to another — typically from an Indian university to an international one. This means you can complete part of your degree at home and finish the remaining semesters abroad, saving both time and money while earning a globally recognized qualification.
-                </p>
-
-              <h4 style={styles.sectionTitle}> How Does It Work?   </h4>
-              <p style={styles.paragraph}>
-               The process involves evaluating your existing coursework against the curriculum of the target university. Credits for subjects that match or are equivalent get transferred, and you only need to complete the remaining courses abroad. Most programs require a minimum GPA (usually 2.5–3.0 on a 4.0 scale) and course-by-course evaluation by the receiving institution.
-              </p>
-               <h4 style={styles.sectionTitle}>Popular Destinations for Credit Transfer</h4>
-              <p style={styles.paragraph}>
-               The USA, Canada, UK, and Australia are the most popular destinations for credit transfers. American universities are especially flexible, with many state universities actively accepting transfer students. Canadian colleges and universities also have well-established credit transfer frameworks, particularly in provinces like British Columbia and Ontario.
-              </p>
-               <h4 style={styles.sectionTitle}>Benefits of Credit Transfer Programs</h4>
-              <p style={styles.paragraph}>
-                The biggest advantage is cost savings — you pay domestic tuition for the initial semesters and international tuition only for the remaining period. You also save on living expenses abroad. Additionally, you gain international exposure and a degree from a recognized foreign university, which significantly boosts your employability and immigration prospects.
-               
-              </p>
-               <h4 style={styles.sectionTitle}>Who is Eligible?</h4>
-              <p style={styles.paragraph}>
-               Students currently enrolled in or having completed 1–2 years of a bachelor's or master's degree program are ideal candidates. You'll need official transcripts, course descriptions (syllabus), proof of English proficiency (IELTS/TOEFL), and sometimes a letter from your current institution. Some universities also accept credits from diploma programs
-              </p>
-               <h4 style={styles.sectionTitle}>Common Challenges & How to Overcome Them</h4>
-              <p style={styles.paragraph}>
-               Not all credits may transfer — some courses might not have equivalents at the target university. Accreditation differences between countries can also complicate the process. Working with experienced consultants like Moin Consultancy ensures your credits are evaluated properly and you're matched with universities that maximize your transferable credits.
-              </p>
-               <h4 style={styles.sectionTitle}>Step-by-Step Process with Moin Consultancy</h4>
-              <p style={styles.paragraph}>
-               Our team handles the entire credit transfer journey: (1) We evaluate your transcripts and identify transferable credits, (2) We shortlist universities with the best credit acceptance rates, (3) We prepare your application with detailed course descriptions, (4) We assist with visa processing and pre-departure support. Our success rate for credit transfers exceeds 90%.
-
-
-              </p>
-
+               At Moin Consultancy, we offer a structured Credit Transfer Program for engineering students in India, aligned with UGC regulations and academic standards. This pathway allows students pursuing B.Tech/BE programs to transfer eligible academic credits and continue their education at recognized institutions in India or abroad—without losing academic progress.
+               </p>
 
               
+               
+            <p style={styles.paragraph}>
+              As per UGC guidelines under the Choice Based Credit System (CBCS) and Academic Bank of Credits (ABC), students can accumulate and transfer credits between approved institutions, provided equivalence and accreditation criteria are met. This ensures a flexible, transparent, and student-centric academic journey.
+            </p>
+            
+               
+              
+              
+<h4 style={styles.sectionTitle}>
+  Key Benefits
+</h4>
+<ul style={styles.ulstyles}>
+  <li>Continue your engineering degree without restarting</li>
+  <li>Transfer credits through UGC-recognized frameworks (ABC/CBCS)</li>
+  <li>Save time and reduce academic duplication</li>
+  <li>Access national and international academic pathways</li>
+  <li>Enhance career prospects with recognized qualifications</li>
+</ul>
+
+<h4 style={styles.sectionTitle}>
+Our Support
+</h4>
+
+            <p style={styles.paragraph}>
+
+At Moin Consultancy, we ensure your credit transfer process is compliant and smooth:</p>
+<ul style={styles.ulstyles}>
+  <li>Academic profile evaluation as per UGC norms</li>
+  <li>Mapping of subjects and credit equivalence</li>
+  <li>University shortlisting (India & Abroad)</li>
+  <li>Documentation and application support</li>
+  <li>Guidance on credit transfer through ABC portal</li>
+  <li>Visa and transition support for international transfers</li>
+</ul>
+<h4 style={styles.sectionTitle}>
+            Build Your Engineering Career with Flexibility  </h4>
+
+
+    <p style={styles.paragraph}>
+
+
+
+            With the right guidance and compliance, credit transfer becomes a smart and efficient route to complete your engineering degree while exploring broader academic opportunities.
+           </p>
             </div>
           )}
         </div>

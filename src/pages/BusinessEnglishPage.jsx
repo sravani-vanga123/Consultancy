@@ -51,7 +51,7 @@ const BusinessEnglish = () => {
     },
 
     content: {
-      maxWidth: "900px",
+      maxWidth: "1200px",
       margin: "0 auto",
       fontSize: "18px",
       lineHeight: "1.8",

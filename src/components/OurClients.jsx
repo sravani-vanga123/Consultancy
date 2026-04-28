@@ -44,13 +44,13 @@ const OurClients = () => {
       style={{
         padding: "10px 20px",
         textAlign: "center",
-        background: "beige",
+       
         fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
       }}
     >
-      <h2 style={{ color: "#A020F0", fontWeight: "800", marginTop:"0px",
+      <h2 style={{ color: "white", fontWeight: "800", marginTop:"0px",
         gap:"0px" }}>Our Clients Say</h2>
-      <p>Real experiences from people who trusted our services.</p>
+      <p style={{color:"white"}}>Real experiences from people who trusted our services.</p>
     
 
       {/* SLIDER AREA */}
@@ -81,7 +81,7 @@ const OurClients = () => {
           style={{
             maxWidth: "900px",
             width: "100%",
-            background: "linear-gradient(135deg, #A020F0, #EDE8d0)",
+            backgroundColor:"beige",
             padding: "40px",
             borderRadius: "20px",
             textAlign: "left",
@@ -91,21 +91,21 @@ const OurClients = () => {
         >
           <FaQuoteLeft style={{ fontSize: "40px", color: "#c4a7e7" }} />
 
-          <p style={{ fontSize: "20px", fontStyle: "italic", color: "white" }}>
+          <p style={{ fontSize: "20px", fontStyle: "italic", color: "black" }}>
             "{testimonials[index].text}"
           </p>
 
-          <div style={{ margin: "15px 0", color: "white" }}>
+          <div style={{ margin: "15px 0", color: "gold" }}>
             {[...Array(5)].map((_, i) => (
               <FaStar key={i} />
             ))}
           </div>
 
-          <h3 style={{ color: "white", marginBottom: "5px" }}>
+          <h3 style={{ color: "black", marginBottom: "5px" }}>
             {testimonials[index].name}
           </h3>
 
-          <p style={{ color: "white" }}>
+          <p style={{ color: "black" }}>
             {testimonials[index].role}
           </p>
         </div>
@@ -141,7 +141,7 @@ const OurClients = () => {
               width: index === i ? "30px" : "10px",
               height: "10px",
               borderRadius: "20px",
-              background: index === i ? "#6a38c2" : "#d1c4e9",
+              background: index === i ? "black" : "black",
               cursor: "pointer",
               transition: "0.3s",
             }}

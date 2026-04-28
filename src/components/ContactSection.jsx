@@ -3,7 +3,7 @@ import React from "react";
 function ContactSection() {
 
   const sectionStyle = {
-    background: "#f5f5dc",
+   
     padding: "10px 20px",
   };
 
@@ -16,7 +16,7 @@ function ContactSection() {
     textAlign: "center",
     marginBottom: "30px",
     marginTop:"20px",
-  color: "#A020F0",
+  color: "white",
        fontWeight: "800"
   };
 

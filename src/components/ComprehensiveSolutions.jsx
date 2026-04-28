@@ -13,39 +13,39 @@ const solutions = [
     icon: <FaGraduationCap />,
     title: "Study Abroad",
     desc: "We go beyond study abroad—helping you build a successful global career.",
-    backgroundcolor: "linear-gradient(135deg, #A020F0, #EDE8d0)",
+   backgroundcolor:"beige"
   },
   {
     icon: <FaBookOpen />,
     title: "University Admissions",
     desc: "End-to-end guidance from course selection to enrollment.",
-     backgroundcolor: "linear-gradient(135deg, #A020F0, #EDE8d0)",
+     backgroundcolor:"beige"
   },
   {
     icon: <FaLaptopCode />,
     title: "IT Solutions",
     desc: "Secure, scalable, and future-ready IT systems.",
-     backgroundcolor: "linear-gradient(135deg, #A020F0, #EDE8d0)",
+    backgroundcolor:"beige"
   },
   {
     icon: <FaUsers />,
     title: "Recruitment",
     desc: "Connecting talent with the right opportunities.",
-     backgroundcolor: "linear-gradient(135deg, #A020F0, #EDE8d0)",
+    backgroundcolor:"beige"
   
   },
   {
     icon: <FaChartLine />,
     title: "Career Counselling",
     desc: "Helping you choose the right career path.",
-     backgroundcolor: "linear-gradient(135deg, #A020F0, #EDE8d0)",
+     backgroundcolor:"beige"
     
   },
   {
     icon: <FaGlobe />,
     title: "Immigration",
     desc: "Smooth and trusted global relocation services.",
-     backgroundcolor: "linear-gradient(135deg, #A020F0, #EDE8d0)",
+    backgroundcolor:"beige"
    
   },
 ];
@@ -55,15 +55,15 @@ const ComprehensiveSolutions = () => {
     <section
       style={{
         padding: "10px 20px",
-        background: "beige",
+     
         textAlign: "center",
         color: "black"
       }}
     >
-      <h2 style={{ color: "#A020F0", fontWeight: "800" }}>
+      <h2 style={{ color: "white", fontWeight: "800" }}>
   Our Comprehensive Solutions
 </h2>
-      <p>
+      <p style={{color:"white"}}>
         From career counseling to IT solutions, we provide end-to-end support
         for your global success.
       </p>
@@ -115,11 +115,11 @@ const ComprehensiveSolutions = () => {
               {card.icon}
             </div>
 
-            <h3 style={{ margin: "0 0 10px", color: "white" }}>
+            <h3 style={{ margin: "0 0 10px", color: "black" }}>
               {card.title}
             </h3>
 
-            <p style={{ color: "white", lineHeight: "1.6" }}>
+            <p style={{ color: "black", lineHeight: "1.6" }}>
               {card.desc}
             </p>
           </div>

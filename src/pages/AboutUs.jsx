@@ -84,9 +84,10 @@ const AboutUs = () => {
               fontSize: "20px",
             }}
           >
-            <p>Moin Consultancy is a dedicated international overseas educational agency committed to helping students choose the right careers and pave their path to a bright future. We specialize in guiding students through their academic journey by offering personalized career counseling, expert training in software courses, and enhancing communication skills.</p>
-          <p>With a strong global network of partners in Australia, United States, New Zealand, Canada, Europe, Ireland, and United Kingdom, we connect students with top institutions and diverse opportunities, making the dream of studying abroad a reality.</p>
-          <p>At Moin Consultancy, every student deserves the right guidance and skills to achieve their goals. Our commitment goes beyond helping students study abroad and we equip them with the tools to excel in a multicultural environment and confidently step into their future careers.</p>
+            <p>Moin Consultancy is a trusted, ISO 9001:2015 certified organization delivering education, career, and IT solutions designed to empower individuals and businesses for global success. With a strong commitment to quality and results, we provide integrated services that bridge the gap between aspiration, skills, and opportunity.</p>
+          <p>We specialize in Study Abroad, University Admissions (India & Overseas), Immigration, Recruitment, IT Solutions, Software & Cloud Training, Career Counselling, and IELTS Coaching—offering end-to-end support tailored to each client’s goals.</p>
+          <p>Our strength lies in a personalized, transparent, and outcome-driven approach, ensuring every student, professional, or organization receives the right guidance at every stage—from career planning and skill development to admissions, placements, and global mobility.</p>
+          <p>At Moin Consultancy, we don’t just offer services—we build pathways to success, helping you grow with confidence in an increasingly competitive and globalized world.</p>
           </div>
         </div>
       </div>

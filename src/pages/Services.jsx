@@ -46,7 +46,7 @@ const Services = () => {
       style={{
         minHeight: "100vh",
         width: "100%",
-        background: "linear-gradient(135deg, #e6d9f5, #f3e8d9)",
+        background: "#F8F9FA",
         margin: 0,
         padding: 0,
         display: "flex",
@@ -141,12 +141,12 @@ const Services = () => {
               <div
                 key={index}
                 style={{
-                  background: "#ffffff",
+                  background: "#A020F0",
                   padding: "12px 16px",
                   borderRadius: "10px",
                   boxShadow: "0 4px 12px rgba(0,0,0,0.05)",
                   fontSize: "14px",
-                  color: "black",
+                  color: "white",
                 }}
               >
                 {item}

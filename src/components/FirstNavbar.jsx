@@ -1,4 +1,7 @@
 import React from "react";
+import { FaFacebookF } from "react-icons/fa";
+import { BiLogoLinkedin } from "react-icons/bi";
+import { FaCamera } from "react-icons/fa";
 
 const FirstNavbar = () => {
   const styles = {
@@ -39,7 +42,7 @@ const FirstNavbar = () => {
       width: "35px",
       height: "35px",
       borderRadius: "50%",
-      border: "1px solid #ccc",
+      border: "1px solid #A020F0",
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
@@ -62,9 +65,10 @@ const FirstNavbar = () => {
       </div>
 
       <div style={styles.right}>
-        <div style={styles.iconCircle}>f</div>
-        <div style={styles.iconCircle}>📷</div>
-        <div style={styles.iconCircle}>in</div>
+        <div style={styles.iconCircle}><FaFacebookF /></div>
+        <div style={styles.iconCircle}><FaCamera />
+</div>
+        <div style={styles.iconCircle}><BiLogoLinkedin /></div>
       </div>
     </div>
   );

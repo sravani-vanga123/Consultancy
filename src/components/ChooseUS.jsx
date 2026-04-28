@@ -6,25 +6,25 @@ const reasons = [
     icon: <FaAward />,
     title: "Expertise & Experience",
     desc: "We bring years of experience and industry expertise to the table, ensuring that you receive top-quality services. Our team consists of professionals who are passionate about their work and stay updated with the latest trends and technologies.",
- backgroundcolor: "linear-gradient(135deg, #A020F0, #EDE8d0)",
+backgroundcolor:"beige",
 },
   {
     icon: <FaUserFriends />,
     title: "Personalized Solutions",
     desc: "We understand that every client is different. That's why we provide personalized solutions that align with your goals and requirements. We take the time to understand your specific needs and create strategies that deliver results.",
-    backgroundcolor: "linear-gradient(135deg, #A020F0, #EDE8d0)",
+   backgroundcolor:"beige", 
   },
   {
     icon: <FaHeadset />,
     title: "24/7 Support",
     desc: "Our dedicated support team is available round the clock to assist you with any queries or concerns you may have.",
-backgroundcolor: "linear-gradient(135deg, #A020F0, #EDE8d0)",
+backgroundcolor:"beige",
   },
   {
     icon: <FaGlobe />,
     title: "Global Reach",
     desc: "Access to top educational institutions and technology partners worldwide, ensuring you get the best opportunities available.",
-backgroundcolor: "linear-gradient(135deg, #A020F0, #EDE8d0)",
+backgroundcolor:"beige",
   },
 ];
 
@@ -33,14 +33,14 @@ const WhyChooseUS = () => {
     <section
       style={{
         padding: "10px 20px",
-        background: "beige",
+        background: "#A020F0s",
         textAlign: "center",
        
       }}
     >
-      <h2 style={{ color: "#A020F0", fontWeight: "800", marginTop:"0px",
+      <h2 style={{ color: "white", fontWeight: "800", marginTop:"0px",
         gap:"0px" }}>Why Choose Us</h2>
-      <p>
+      <p style={{color:"white"}}>
         We are committed to delivering exceptional services tailored to meet your
         unique needs.
       </p>
@@ -79,7 +79,7 @@ const WhyChooseUS = () => {
                 width: "60px",
                 height: "60px",
                 background: "rgba(255, 255, 255, 0.2)",
-                color: "#fff",
+                color: "black",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -92,9 +92,9 @@ const WhyChooseUS = () => {
               {item.icon}
             </div>
 
-            <h3 style={{ margin: "0 0 10px", color: "#fff" }}>{item.title}</h3>
+            <h3 style={{ margin: "0 0 10px", color: "black" }}>{item.title}</h3>
 
-            <p style={{ color: "#f1f5f9", lineHeight: "1.6" }}>{item.desc}</p>
+            <p style={{ color: "black", lineHeight: "1.6" }}>{item.desc}</p>
           </div>
         ))}
       </div>

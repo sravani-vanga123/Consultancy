@@ -88,9 +88,7 @@ const VisionMission = () => {
             <div>
               <h3 style={styles.title}>Vision</h3>
               <p style={styles.text}>
-                To be a leading education consultancy that inspires and empowers
-                students to achieve their fullest potential by guiding them toward
-                fulfilling careers and equipping them with global opportunities.
+                To be a leading global consultancy recognized for transforming lives through education, technology, and career excellence. We aim to create a future where every individual has access to the right opportunities, skills, and guidance to succeed on a global stage.
               </p>
             </div>
           </div>
@@ -100,9 +98,7 @@ const VisionMission = () => {
             <div>
               <h3 style={styles.title}>Mission</h3>
               <p style={styles.text}>
-                Our mission is to provide personalized guidance, transparent
-                processes, and end-to-end support to students aspiring to study
-                abroad, ensuring success at every step of their journey.
+               To deliver innovative, reliable, and result-driven solutions in education, career development, and IT services—empowering individuals and organizations to achieve their goals with confidence. We are committed to providing personalized guidance, industry-relevant training, and seamless support that drives real success.
               </p>
             </div>
           </div>
