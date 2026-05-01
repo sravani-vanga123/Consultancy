@@ -1,17 +1,29 @@
 import React from "react";
 import MoinImage from "../assets/moin.png";
 import VisionMission from "../components/Aboutvision";
+
 const AboutUs = () => {
   return (
     <div
       style={{
         width: "100%",
-        minHeight: "100vh", // 👈 full page color
-         background: "linear-gradient(135deg, #e6d9f5, #f3e8d9)",
+        minHeight: "100vh",
+       background:    "linear-gradient(135deg, #F3E8FF 0%, #E9D5FF 50%, #FDF4FF 100%)",
         fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-        padding: "20px 0",
+        padding: "40px 0",
+        position: "relative",
+        overflow: "hidden",
       }}
     >
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+       
+          zIndex: 1,
+        }}
+      />
+
       {/* CENTER CONTAINER */}
       <div
         style={{
@@ -84,17 +96,24 @@ const AboutUs = () => {
               fontSize: "20px",
             }}
           >
-            <p>Moin Consultancy is a trusted, ISO 9001:2015 certified organization delivering education, career, and IT solutions designed to empower individuals and businesses for global success. With a strong commitment to quality and results, we provide integrated services that bridge the gap between aspiration, skills, and opportunity.</p>
-          <p>We specialize in Study Abroad, University Admissions (India & Overseas), Immigration, Recruitment, IT Solutions, Software & Cloud Training, Career Counselling, and IELTS Coaching—offering end-to-end support tailored to each client’s goals.</p>
-          <p>Our strength lies in a personalized, transparent, and outcome-driven approach, ensuring every student, professional, or organization receives the right guidance at every stage—from career planning and skill development to admissions, placements, and global mobility.</p>
-          <p>At Moin Consultancy, we don’t just offer services—we build pathways to success, helping you grow with confidence in an increasingly competitive and globalized world.</p>
+            <p>
+              Moin Consultancy is a trusted, ISO 9001:2015 certified organization delivering education, career, and IT solutions designed to empower individuals and businesses for global success. With a strong commitment to quality and results, we provide integrated services that bridge the gap between aspiration, skills, and opportunity.
+            </p>
+            <p>
+              We specialize in Study Abroad, University Admissions (India & Overseas), Immigration, Recruitment, IT Solutions, Software & Cloud Training, Career Counselling, and IELTS Coaching—offering end-to-end support tailored to each client’s goals.
+            </p>
+            <p>
+              Our strength lies in a personalized, transparent, and outcome-driven approach, ensuring every student, professional, or organization receives the right guidance at every stage—from career planning and skill development to admissions, placements, and global mobility.
+            </p>
+            <p>
+              At Moin Consultancy, we don’t just offer services—we build pathways to success, helping you grow with confidence in an increasingly competitive and globalized world.
+            </p>
           </div>
         </div>
       </div>
 
- <VisionMission />
- </div>
-
+      <VisionMission />
+    </div>
   );
 };
 

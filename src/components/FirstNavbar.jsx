@@ -12,7 +12,7 @@ const FirstNavbar = () => {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
-      background: "#e8dccb",
+      background: "beige",
       color: "black",
       padding: "10px 30px",
       fontSize: "14px",

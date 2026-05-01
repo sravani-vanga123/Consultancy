@@ -102,8 +102,8 @@ const ComprehensiveSolutions = () => {
               style={{
                 width: "60px",
                 height: "60px",
-                background: "#e6ddf7",
-                color: "#6a38c2",
+                background: "beige",
+                color: "black",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
