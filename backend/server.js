@@ -3,7 +3,11 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
 
+// Existing Auth Routes
 const authRoutes = require("./routes/authRoutes");
+
+// New Contact Routes
+const contactRoutes = require("./routes/contactRoutes");
 
 const app = express();
 
@@ -12,7 +16,12 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+
+// Signup and Login APIs
 app.use("/api/auth", authRoutes);
+
+// Contact Form API
+app.use("/api/contact", contactRoutes);
 
 // Test route
 app.get("/", (req, res) => {
@@ -32,5 +41,8 @@ mongoose
     });
   })
   .catch((error) => {
-    console.log("MongoDB Connection Error:", error.message);
+    console.log(
+      "MongoDB Connection Error:",
+      error.message
+    );
   });

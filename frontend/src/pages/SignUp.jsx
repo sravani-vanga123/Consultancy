@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
+  const navigate = useNavigate();
+
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -34,13 +37,16 @@ const Signup = () => {
 
       alert("Signup successful!");
 
-      // Clear form after successful signup
+      // Clear form
       setFirstName("");
       setLastName("");
       setEmail("");
       setMobile("");
       setPassword("");
       setRemember(false);
+
+      // Signup successful → Open Login page
+      navigate("/login");
     } catch (error) {
       console.log("Signup Error:", error);
 
@@ -49,6 +55,11 @@ const Signup = () => {
           "Signup failed. Please try again."
       );
     }
+  };
+
+  // Already have an account → Open Login page
+  const handleLoginClick = () => {
+    navigate("/login");
   };
 
   return (
@@ -61,6 +72,7 @@ const Signup = () => {
         background: "beige",
         fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
         padding: "20px",
+        boxSizing: "border-box",
       }}
     >
       <form
@@ -71,13 +83,16 @@ const Signup = () => {
           borderRadius: "10px",
           boxShadow: "0 5px 15px rgba(0,0,0,0.1)",
           width: "350px",
+          maxWidth: "100%",
           boxSizing: "border-box",
         }}
       >
         <h2
           style={{
             textAlign: "center",
+            marginTop: 0,
             marginBottom: "25px",
+            color: "#333",
           }}
         >
           Sign Up
@@ -103,6 +118,7 @@ const Signup = () => {
               borderRadius: "5px",
               border: "1px solid #ccc",
               boxSizing: "border-box",
+              outline: "none",
             }}
           />
 
@@ -118,6 +134,7 @@ const Signup = () => {
               borderRadius: "5px",
               border: "1px solid #ccc",
               boxSizing: "border-box",
+              outline: "none",
             }}
           />
         </div>
@@ -136,6 +153,7 @@ const Signup = () => {
             borderRadius: "5px",
             border: "1px solid #ccc",
             boxSizing: "border-box",
+            outline: "none",
           }}
         />
 
@@ -144,10 +162,14 @@ const Signup = () => {
           type="tel"
           placeholder="Enter Mobile Number"
           value={mobile}
-          onChange={(e) => setMobile(e.target.value)}
+          onChange={(e) => {
+            const value = e.target.value.replace(/\D/g, "");
+            setMobile(value);
+          }}
           required
           maxLength="10"
           pattern="[0-9]{10}"
+          title="Please enter a valid 10-digit mobile number"
           style={{
             width: "100%",
             padding: "10px",
@@ -155,6 +177,7 @@ const Signup = () => {
             borderRadius: "5px",
             border: "1px solid #ccc",
             boxSizing: "border-box",
+            outline: "none",
           }}
         />
 
@@ -173,6 +196,7 @@ const Signup = () => {
             borderRadius: "5px",
             border: "1px solid #ccc",
             boxSizing: "border-box",
+            outline: "none",
           }}
         />
 
@@ -196,6 +220,7 @@ const Signup = () => {
               width: "15px",
               height: "15px",
               cursor: "pointer",
+              flexShrink: 0,
             }}
           />
 
@@ -214,6 +239,7 @@ const Signup = () => {
             borderRadius: "5px",
             cursor: "pointer",
             fontSize: "16px",
+            fontWeight: "bold",
           }}
         >
           Sign Up
@@ -259,14 +285,18 @@ const Signup = () => {
             textAlign: "center",
             fontSize: "14px",
             margin: 0,
+            color: "#444",
           }}
         >
           Already have an account?{" "}
+          
           <span
+            onClick={handleLoginClick}
             style={{
               color: "purple",
               cursor: "pointer",
               fontWeight: "bold",
+              textDecoration: "underline",
             }}
           >
             Login
