@@ -10,7 +10,7 @@ import NewZealand from "../assets/New-Zealand.png";
 import USA from "../assets/USA.png";
 import Canada from "../assets/canada.png";
 import Turkey from "../assets/Turkey.png";
-import UK from "../assets/UK.png";
+import UK from "../assets/uk.png";
 import UAE from "../assets/UAE.png";
 
 // ================= MENU ITEMS =================
