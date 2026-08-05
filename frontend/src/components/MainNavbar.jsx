@@ -8,7 +8,7 @@ import Europe from "../assets/Europe.png";
 import Ireland from "../assets/Ireland.png";
 import NewZealand from "../assets/New-Zealand.png";
 import USA from "../assets/USA.png";
-import Canada from "../assets/Canada.png";
+import Canada from "../assets/canada.png";
 import Turkey from "../assets/Turkey.png";
 import UK from "../assets/UK.png";
 import UAE from "../assets/UAE.png";
