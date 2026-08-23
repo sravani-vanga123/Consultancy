@@ -39,10 +39,7 @@ const registerUser = async (req, res) => {
     }
 
     // Hash password
-    const hashedPassword = await bcrypt.hash(
-      password,
-      10
-    );
+    const hashedPassword = await bcrypt.hash(password, 10);
 
     // Create user
     const newUser = await User.create({
@@ -84,6 +81,15 @@ const loginUser = async (req, res) => {
       });
     }
 
+    // Check JWT_SECRET
+    if (!process.env.JWT_SECRET) {
+      console.log("JWT_SECRET is missing");
+
+      return res.status(500).json({
+        message: "Server misconfigured: missing JWT_SECRET",
+      });
+    }
+
     // Find user
     const user = await User.findOne({
       email: email.toLowerCase(),
@@ -96,11 +102,10 @@ const loginUser = async (req, res) => {
     }
 
     // Compare password
-    const isPasswordCorrect =
-      await bcrypt.compare(
-        password,
-        user.password
-      );
+    const isPasswordCorrect = await bcrypt.compare(
+      password,
+      user.password
+    );
 
     if (!isPasswordCorrect) {
       return res.status(401).json({
@@ -108,7 +113,7 @@ const loginUser = async (req, res) => {
       });
     }
 
-    // Create token
+    // Create JWT token
     const token = jwt.sign(
       {
         id: user._id,
@@ -119,6 +124,8 @@ const loginUser = async (req, res) => {
         expiresIn: "7d",
       }
     );
+
+    console.log("Login successful for:", user.email);
 
     return res.status(200).json({
       message: "Login successful",

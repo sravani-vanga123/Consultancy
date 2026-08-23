@@ -1,16 +1,18 @@
 const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
 
-const router = express.Router();
+require("dotenv").config();
 
-const {
-  registerUser,
-  loginUser,
-} = require("../controllers/authController");
+console.log(
+  "JWT_SECRET loaded:",
+  !!process.env.JWT_SECRET
+);
 
-// Signup
-router.post("/register", registerUser);
+// Existing Auth Routes
+const authRoutes = require("./routes/authRoutes");
 
-// Login
-router.post("/login", loginUser);
+// New Contact Routes
+const contactRoutes = require("./routes/contactRoutes");
 
-module.exports = router;
+const app = express();
