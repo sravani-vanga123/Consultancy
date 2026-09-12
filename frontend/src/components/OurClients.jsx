@@ -48,9 +48,9 @@ const OurClients = () => {
         fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
       }}
     >
-      <h2 style={{ color: "white", fontWeight: "800", marginTop:"0px",
+      <h2 style={{ color: "#A202F0", fontWeight: "800", marginTop:"0px",
         gap:"0px" }}>Our Clients Say</h2>
-      <p style={{color:"white"}}>Real experiences from people who trusted our services.</p>
+      <p style={{color:"black"}}>Real experiences from people who trusted our services.</p>
     
 
       {/* SLIDER AREA */}
@@ -81,7 +81,8 @@ const OurClients = () => {
           style={{
             maxWidth: "900px",
             width: "100%",
-            backgroundColor:"beige",
+             background:
+        "linear-gradient(135deg, #FFFFFF 0%, #FAF8F0 50%, #F5F0E6 100%)",
             padding: "40px",
             borderRadius: "20px",
             textAlign: "left",
@@ -89,9 +90,9 @@ const OurClients = () => {
             transition: "0.5s",
           }}
         >
-          <FaQuoteLeft style={{ fontSize: "40px", color: "#c4a7e7" }} />
+          <FaQuoteLeft style={{ fontSize: "40px", color: "#A202F0" }} />
 
-          <p style={{ fontSize: "20px", fontStyle: "italic", color: "black" }}>
+          <p style={{ fontSize: "20px", fontStyle: "italic", color: "#A202F0" }}>
             "{testimonials[index].text}"
           </p>
 

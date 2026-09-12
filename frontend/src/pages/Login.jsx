@@ -55,7 +55,7 @@ const Login = () => {
         justifyContent: "center",
         alignItems: "center",
         minHeight: "100vh",
-        background: "beige",
+        background: "white",
         fontFamily:
           "Futura, Trebuchet MS, Arial, sans-serif",
       }}
@@ -75,12 +75,13 @@ const Login = () => {
           style={{
             textAlign: "center",
             marginBottom: "20px",
+            color: "#A202F0",
           }}
         >
           Login
         </h2>
 
-        <h4>Email Address</h4>
+        <h4 style={{color:"#A202F0"}}>Email Address</h4>
 
         <input
           type="email"
@@ -100,7 +101,7 @@ const Login = () => {
           }}
         />
 
-        <h4>Password</h4>
+        <h4 style={{color:"#A202F0"}}>Password</h4>
 
         <input
           type="password"
@@ -153,7 +154,7 @@ const Login = () => {
 
           <span
             style={{
-              color: "purple",
+              color: "#A202F0",
               fontSize: "13px",
               cursor: "pointer",
             }}
@@ -167,7 +168,7 @@ const Login = () => {
           style={{
             width: "100%",
             padding: "11px",
-            background: "purple",
+            background: "#A202F0",
             color: "white",
             border: "none",
             borderRadius: "5px",

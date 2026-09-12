@@ -1,6 +1,6 @@
 import React from "react";
 import CanadaImage1 from "../assets/canada1.png";
-import CanadaImage2 from "../assets/canada2.png"; // 👈 add second image
+import CanadaImage2 from "../assets/canada2.png"; 
 
 const Canada = () => {
   const cardsData = [
@@ -38,7 +38,7 @@ const Canada = () => {
       margin: 0,
       padding: "20px",
       fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-      background: "linear-gradient(135deg, #faf7ff, #f7efe5)",
+      background: "white",
       minHeight: "100vh",
     },
 
@@ -46,7 +46,7 @@ const Canada = () => {
       textAlign: "center",
       fontSize: isMobile ? "22px" : "32px",
       marginBottom: "20px",
-      color: "black",
+     color: "#A202F0",
     },
 
     // ✅ SAME AS AUSTRALIA & UK
@@ -75,7 +75,7 @@ const Canada = () => {
   },
 
   card: {
-    background: "linear-gradient(135deg, #A020F0, #EDE8D0)",
+    background: " white",
     padding: "18px",
     borderRadius: "12px",
     boxShadow: "0 6px 18px rgba(0,0,0,0.1)",
@@ -87,11 +87,13 @@ const Canada = () => {
     fontSize: "20px",   
     marginBottom: "8px",
     fontWeight: "600",
+    color: "#A202F0",
   },
 
   cardText: {
     fontSize: "18px",   
     lineHeight: "1.5",
+    color: "black",
   },
 
   points: {
@@ -102,6 +104,7 @@ const Canada = () => {
     paddingLeft: "18px",
     marginTop: "8px",
      fontSize: "18px",
+     color: "black",
   },
 };
 

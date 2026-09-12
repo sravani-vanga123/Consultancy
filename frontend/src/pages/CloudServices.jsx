@@ -8,7 +8,7 @@ const CloudServicesPage = () => {
   const styles = {
     page: {
       minHeight: "100vh",
-      background: "linear-gradient(135deg, #f0e6ff, #f5e6d3)",
+      background: "white",
       padding: "40px 20px",
     },
 
@@ -42,7 +42,7 @@ const CloudServicesPage = () => {
 
     title: {
       fontSize: "36px",
-      color: "#111",
+    color: "#A202F0",
       marginTop: "-60px",
       marginBottom: "10px",
     },

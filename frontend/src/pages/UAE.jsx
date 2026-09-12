@@ -37,7 +37,7 @@ const UAE = () => {
       margin: 0,
       padding: "20px",
       fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-    background: "#e8dccb",
+    background: "white",
       minHeight: "100vh",
     },
 
@@ -45,7 +45,7 @@ const UAE = () => {
       textAlign: "center",
       fontSize: isMobile ? "22px" : "32px",
       marginBottom: "20px",
-      color: "black",
+      color: "#A202F0",
     },
 
     // ✅ SAME IMAGE LAYOUT
@@ -75,7 +75,7 @@ const UAE = () => {
   },
 
   card: {
-    background: "linear-gradient(135deg, #A020F0, #EDE8D0)",
+    background: "white",
     padding: "18px",
     borderRadius: "12px",
     boxShadow: "0 6px 18px rgba(0,0,0,0.1)",
@@ -87,11 +87,13 @@ const UAE = () => {
     fontSize: "20px",   
     marginBottom: "8px",
     fontWeight: "600",
+    color:"#A202F0"
   },
 
   cardText: {
     fontSize: "18px",   
     lineHeight: "1.5",
+    color: "black",
   },
 
   points: {
@@ -102,6 +104,7 @@ const UAE = () => {
     paddingLeft: "18px",
     marginTop: "8px",
      fontSize: "18px",
+     color: "black",
   },
 };
 

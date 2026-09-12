@@ -45,7 +45,7 @@ const WhyChooseUS = () => {
     >
       <h2
         style={{
-          color: "white",
+          color: "#A202F0",
           fontWeight: "800",
           marginTop: "0",
         }}
@@ -53,7 +53,7 @@ const WhyChooseUS = () => {
         Why Choose Us
       </h2>
 
-      <p style={{ color: "white" }}>
+      <p style={{ color: "black" }}>
         We are committed to delivering exceptional services tailored to meet
         your unique needs.
       </p>

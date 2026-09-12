@@ -1,7 +1,9 @@
 import React from "react";
-import directorImage from "../assets/director1.png";
+import directorImage from "../assets/moin.png";
+import HrImage from "../assets/Hr2.png";
+import BoyImage from "../assets/Boy1.png"
 
-function TeamSection() {
+function ourTeam() {
   return (
     <div
       style={{
@@ -10,7 +12,7 @@ function TeamSection() {
         gap: "40px",
         textAlign: "center",
        padding: "50px",
-      background: "linear-gradient(135deg, #faf7ff, #f7efe5)",
+       color:"#A202F0",  
     fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
       }}
     >
@@ -19,20 +21,29 @@ function TeamSection() {
         <img
           src={directorImage}
           alt="Director"
-          style={{ width: "200px", marginTop: "10px" }}
+          style={{ width: "200px", marginTop: "10px",height:"300px" }}
         />
          <h2>Moin</h2>
         <h3>Director</h3>
       </div>
 
       <div>
+         <img
+          src={HrImage}
+          alt="Director"
+          style={{ width: "200px", marginTop: "10px" }}
+        />
        
         <h2>S Aafreen</h2>
          <h3>HR Manager</h3>
       </div>
 
       <div>
-        
+        <img
+          src={BoyImage}
+          alt="Director"
+          style={{ width: "200px", marginTop: "10px" }}
+        />
         <h2> SK Naim</h2>
         <h3>Marketing Head</h3>
       </div>
@@ -40,4 +51,4 @@ function TeamSection() {
   );
 }
 
-export default TeamSection;
+export default ourTeam;

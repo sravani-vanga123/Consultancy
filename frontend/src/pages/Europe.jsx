@@ -1,6 +1,6 @@
 import React from "react";
 import EuropeImage1 from "../assets/Europe1.png";
-import EuropeImage2 from "../assets/Europe2.png"; // 👈 add second image
+import EuropeImage2 from "../assets/Europe2.png"; 
 
 const Europe = () => {
   const cardsData = [
@@ -39,7 +39,7 @@ const Europe = () => {
       margin: 0,
       padding: "20px",
       fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-      background: "linear-gradient(135deg, #e6d9f5, #efe2d1)",
+      background: "white",
       minHeight: "100vh",
     },
 
@@ -47,7 +47,7 @@ const Europe = () => {
       textAlign: "center",
       fontSize: isMobile ? "22px" : "32px",
       marginBottom: "20px",
-      color: "black",
+      color: "#A202F0",
     },
 
     // ✅ SAME IMAGE LAYOUT
@@ -76,7 +76,7 @@ const Europe = () => {
   },
 
   card: {
-    background: "linear-gradient(135deg, #A020F0, #EDE8D0)",
+    background: " white",
     padding: "18px",
     borderRadius: "12px",
     boxShadow: "0 6px 18px rgba(0,0,0,0.1)",
@@ -88,11 +88,13 @@ const Europe = () => {
     fontSize: "20px",   
     marginBottom: "8px",
     fontWeight: "600",
+    color: "#A202F0",
   },
 
   cardText: {
     fontSize: "18px",   
     lineHeight: "1.5",
+    color: "black",
   },
 
   points: {
@@ -103,6 +105,7 @@ const Europe = () => {
     paddingLeft: "18px",
     marginTop: "8px",
      fontSize: "18px",
+     color: "black",
   },
 };
 

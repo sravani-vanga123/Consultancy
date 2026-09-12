@@ -15,10 +15,11 @@ const BlogPage = () => {
     header: {
       textAlign: "center",
       marginBottom: "30px",
+      color:"#A202F0"
     },
 
     card: {
-      background: "linear-gradient(135deg, #A020F0, #EDE8d0)",
+      background: " #A020F0",
       borderRadius: "20px",
       padding: "25px",
       marginBottom: "30px",

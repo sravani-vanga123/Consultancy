@@ -7,7 +7,7 @@ const RecruitmentPage = () => {
 
   const styles = {
     page: {
-      backgroundColor: "#f5f0e6",
+      backgroundColor: "white",
       minHeight: "100vh",
       width: "100%",
       margin: 0,
@@ -25,6 +25,7 @@ const RecruitmentPage = () => {
     mainTitle: {
       textAlign: "center",
       margin: "20px 0",
+      color: "#A202F0",
     },
 
     imageContainer: {
@@ -44,7 +45,7 @@ const RecruitmentPage = () => {
     sectionTitle: {
       marginTop: "25px",
       marginBottom: "10px",
-      color: "black",
+     color: "#A202F0",
     },
 
     paragraph: {

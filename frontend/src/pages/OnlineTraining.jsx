@@ -7,7 +7,7 @@ const OnlineTrainingPage = () => {
 
   const styles = {
     page: {
-      backgroundColor: "#f5f0e6",
+      backgroundColor: "white",
       minHeight: "100vh",
       margin: 0,
       padding: 0,
@@ -24,6 +24,7 @@ const OnlineTrainingPage = () => {
     title: {
       textAlign: "center",
       margin: "20px 0",
+      color:"#A202F0"
     },
 
     imageContainer: {
@@ -49,7 +50,7 @@ const OnlineTrainingPage = () => {
     button: {
       padding: "12px 28px",
       fontSize: "16px",
-      backgroundColor: "#007BFF",
+      backgroundColor: "#A202F0",
       color: "#fff",
       border: "none",
       borderRadius: "6px",
@@ -61,7 +62,7 @@ const OnlineTrainingPage = () => {
     sectionTitle: {
       marginTop: "25px",
       marginBottom: "10px",
-      color: "black",
+      color: "#A202F0",
     },
 
     paragraph: {

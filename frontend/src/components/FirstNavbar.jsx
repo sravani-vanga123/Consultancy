@@ -12,7 +12,8 @@ const FirstNavbar = () => {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
-      background: "beige",
+      background:
+        "linear-gradient(135deg, #FFFFFF 0%, #FAF8F0 50%, #F5F0E6 100%)",
       color: "black",
       padding: "10px 30px",
       fontSize: "14px",

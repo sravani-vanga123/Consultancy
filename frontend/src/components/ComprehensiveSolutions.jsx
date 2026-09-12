@@ -16,13 +16,13 @@ const solutions = [
     icon: <FaGraduationCap />,
     title: "Study Abroad",
     desc: "We go beyond study abroad—helping you build a successful global career.",
-    backgroundcolor: "beige",
+    backgroundcolor: "white",
   },
   {
     icon: <FaBookOpen />,
     title: "University Admissions",
     desc: "End-to-end guidance from course selection to enrollment.",
-    backgroundcolor: "beige",
+    backgroundcolor: "white",
   },
   {
     icon: <FaLaptopCode />,
@@ -61,7 +61,7 @@ const ComprehensiveSolutions = () => {
     >
       <h2
         style={{
-          color: "white",
+          color: "#A202F0",
           fontWeight: "800",
           marginBottom: "10px",
         }}
@@ -71,7 +71,7 @@ const ComprehensiveSolutions = () => {
 
       <p
         style={{
-          color: "white",
+          color: "black",
           marginTop: "0",
         }}
       >

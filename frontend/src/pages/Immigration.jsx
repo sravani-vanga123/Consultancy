@@ -7,7 +7,7 @@ const ImmigrationPage = () => {
 
   const styles = {
     page: {
-      backgroundColor: "#f5f0e6",
+      backgroundColor: "white",
       minHeight: "100vh",
       width: "100%",
       margin: 0,
@@ -25,6 +25,7 @@ const ImmigrationPage = () => {
     mainTitle: {
       textAlign: "center",
       margin: "20px 0",
+      color: "#A202F0",
     },
 
     imageContainer: {
@@ -44,7 +45,7 @@ const ImmigrationPage = () => {
     sectionTitle: {
       marginTop: "25px",
       marginBottom: "10px",
-      color: "black",
+     color: "#A202F0",
     },
 
     paragraph: {
@@ -55,6 +56,7 @@ const ImmigrationPage = () => {
     listTitle: {
       marginTop: "20px",
       marginBottom: "10px",
+      color: "#A202F0",
     },
 
     list: {

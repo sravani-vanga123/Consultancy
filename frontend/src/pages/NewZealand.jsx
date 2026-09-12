@@ -1,6 +1,6 @@
 import React from "react";
 import NewZealandImage1 from "../assets/New-Zealand12.png";
-import NewZealandImage2 from "../assets/New-Zealand2.png"; // 👈 add second image
+import NewZealandImage2 from "../assets/New-Zealand2.png"; 
 
 const NewZealand = () => {
   const cardsData = [
@@ -41,7 +41,7 @@ const NewZealand = () => {
       margin: 0,
       padding: "20px",
       fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-      background: "linear-gradient(135deg, #faf7ff, #f7efe5)",
+      background: "white",
       minHeight: "100vh",
     },
 
@@ -49,7 +49,7 @@ const NewZealand = () => {
       textAlign: "center",
       fontSize: isMobile ? "22px" : "32px",
       marginBottom: "20px",
-      color: "black",
+    color: "#A202F0",
     },
 
     // ✅ SAME IMAGE LAYOUT
@@ -81,7 +81,7 @@ const NewZealand = () => {
   },
 
   card: {
-    background: "linear-gradient(135deg, #A020F0, #EDE8D0)",
+    background: " white",
     padding: "18px",
     borderRadius: "12px",
     boxShadow: "0 6px 18px rgba(0,0,0,0.1)",
@@ -93,11 +93,13 @@ const NewZealand = () => {
     fontSize: "20px",   
     marginBottom: "8px",
     fontWeight: "600",
+    color: "#A202F0",
   },
 
   cardText: {
     fontSize: "18px",   
     lineHeight: "1.5",
+    color: "black",
   },
 
   points: {
@@ -108,6 +110,7 @@ const NewZealand = () => {
     paddingLeft: "18px",
     marginTop: "8px",
      fontSize: "18px",
+     color: "black",
   },
 };
 

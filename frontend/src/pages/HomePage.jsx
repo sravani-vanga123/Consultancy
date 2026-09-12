@@ -35,7 +35,8 @@ const buttonStyle = {
     <div
       style={{
         fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
-      backgroundColor: "green",
+     background:
+        "linear-gradient(135deg, #FFFFFF 0%, #FAF8F0 50%, #F5F0E6 100%)",
         position: "relative",
         
       }}

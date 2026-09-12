@@ -43,7 +43,7 @@ function StudyAbroad() {
 
   const styles = {
     container: {
-      backgroundColor: "beige",
+      backgroundColor: "white",
       minHeight: "100vh",
       fontFamily: "Futura, Trebuchet MS, Arial",
       padding: "10px"
@@ -51,14 +51,17 @@ function StudyAbroad() {
 
     section: {
       marginTop: "20px"
+      
     },
 
     header: {
-      textAlign: "center"
+      textAlign: "center",
+     
     },
 
     heading: {
-      fontSize: isMobile ? "24px" : "32px"
+      fontSize: isMobile ? "24px" : "32px",
+      Color:"#A202F0"
     },
 
     banner: {
@@ -70,7 +73,8 @@ function StudyAbroad() {
 
     sectionTitle: {
       textAlign: "center",
-      marginTop: "20px"
+      marginTop: "20px",
+      Color:"#A202F0"
     },
 
     row: {
@@ -88,7 +92,7 @@ function StudyAbroad() {
       padding: "15px",
       borderRadius: "12px",
       boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
-      background: "linear-gradient(135deg, #A020F0, #EDE8d0)"
+      background: "white"
     },
 
     cardImg: {

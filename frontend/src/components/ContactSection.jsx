@@ -105,21 +105,23 @@ function ContactSection() {
     textAlign: "center",
     marginTop: "20px",
     marginBottom: "30px",
-    color: "white",
+    color: "#A202F0",
     fontWeight: "800",
     fontFamily:
       "Futura, Trebuchet MS, Arial, sans-serif",
   };
 
   // Form card style
-  const formStyle = {
-    background: "#ffffff",
-    padding: "40px",
-    borderRadius: "8px",
-    boxShadow:
-      "0px 2px 10px rgba(0,0,0,0.1)",
-    boxSizing: "border-box",
-  };
+const formStyle = {
+  background: "#ffffff",
+  padding: "36px",
+  borderRadius: "24px",
+  boxShadow: "0 20px 60px rgba(0,0,0,0.06)",
+  border: "1px solid #F0EDE8",
+  boxSizing: "border-box",
+};
+
+
 
   // Label style
   const labelStyle = {

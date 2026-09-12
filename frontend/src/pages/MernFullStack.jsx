@@ -7,7 +7,7 @@ const MernFullStack = () => {
 
   const styles = {
     page: {
-      backgroundColor: "#f5f0e6",
+      backgroundColor: "white",
       minHeight: "100vh",
       width: "100%",
       margin: 0,
@@ -25,6 +25,7 @@ const MernFullStack = () => {
     mainTitle: {
       textAlign: "center",
       margin: "20px 0",
+      color:"#A202F0"
     },
 
     imageContainer: {
@@ -37,7 +38,7 @@ const MernFullStack = () => {
     image: {
       width: isMobile ? "100%" : "50%",
       height: "350px",
-      objectFit: "cover", // 👈 zoom-out effect (you asked earlier)
+      objectFit: "cover", 
       backgroundColor: "#eee",
       borderRadius: "12px",
     },
@@ -45,7 +46,7 @@ const MernFullStack = () => {
     button: {
       padding: "12px 28px",
       fontSize: "16px",
-      backgroundColor: "#007BFF",
+      backgroundColor: "#A202F0",
       color: "#fff",
       border: "none",
       borderRadius: "6px",
@@ -57,7 +58,7 @@ const MernFullStack = () => {
     sectionTitle: {
       marginTop: "25px",
       marginBottom: "10px",
-      color: "black",
+      color: "#A202F0",
     },
 
     paragraph: {

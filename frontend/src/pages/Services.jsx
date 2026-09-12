@@ -1,6 +1,6 @@
 import React from "react";
 
-// Import images
+
 import StudyAbroadImg from "../assets/study-Abroad1.png";
 import CareerCounsellingImg from "../assets/career-councelling1.png";
 import InternshipImg from "../assets/intern.png";
@@ -70,7 +70,7 @@ const Services = () => {
   style={{
     fontSize: "28px",
     fontWeight: "700",
-    color: "black",
+    color: "#A202F0",
     margin: "0 0 10px 0", 
     padding: "0",        
   }}
@@ -113,7 +113,7 @@ const Services = () => {
         >
          <h5
   style={{
-    color: "black",
+    color: "#A202F0",
     fontSize: "22px",
     marginBottom: "15px",
     marginTop: "0", 
@@ -141,12 +141,12 @@ const Services = () => {
               <div
                 key={index}
                 style={{
-                  background: "#A020F0",
+                  background: "white",
                   padding: "12px 16px",
                   borderRadius: "10px",
                   boxShadow: "0 4px 12px rgba(0,0,0,0.05)",
                   fontSize: "14px",
-                  color: "white",
+                  color: "black",
                 }}
               >
                 {item}
@@ -170,7 +170,7 @@ const Services = () => {
             <div
               key={index}
               style={{
-                 background: "linear-gradient(135deg, #A020F0, #EDE8d0)",
+                 background: "white",
                 borderRadius: "18px",
                 padding: "25px",
                 boxShadow: "0 8px 25px rgba(0,0,0,0.08)",
@@ -204,6 +204,7 @@ const Services = () => {
                   fontSize: "18px",
                   fontWeight: "600",
                   marginBottom: "10px",
+                  color:"#A202F0"
                 }}
               >
                 {title}
@@ -213,7 +214,7 @@ const Services = () => {
                 style={{
                   fontSize: "14px",
                   lineHeight: "1.6",
-                  color: "rgba(255,255,255,0.9)",
+                  color: "black",
                 }}
               >
                 {description}

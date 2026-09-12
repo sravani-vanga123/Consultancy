@@ -4,13 +4,12 @@ const Card = ({ icon, title, text, points }) => {
   const styles = {
     card: {
       background:
-        "linear-gradient(135deg, #EDE8D0 0%, #F7F4E8 50%, #E8E3C8 100%)",
+        "linear-gradient(135deg, #FFFFFF 0%, #FAF8F0 50%, #F5F0E6 100%)",
 
       padding: "35px",
 
       borderRadius: "30px",
 
-      // Height changes automatically according to content
       height: "auto",
 
       boxSizing: "border-box",
@@ -41,8 +40,6 @@ const Card = ({ icon, title, text, points }) => {
 
       height: "70px",
 
-      background: "rgba(255, 255, 255, 0.25)",
-
       display: "flex",
 
       alignItems: "center",
@@ -53,7 +50,7 @@ const Card = ({ icon, title, text, points }) => {
 
       fontSize: "30px",
 
-      color: "#111",
+      color: "#A020F0",
 
       marginBottom: "25px",
 
@@ -67,7 +64,7 @@ const Card = ({ icon, title, text, points }) => {
 
       fontWeight: "700",
 
-      color: "#1a1a1a",
+      color: "#A202F0",
 
       letterSpacing: "1px",
     },
@@ -77,7 +74,7 @@ const Card = ({ icon, title, text, points }) => {
 
       lineHeight: "1.7",
 
-      color: "#222",
+      color: "#555555",
 
       margin: "0",
     },
@@ -96,6 +93,8 @@ const Card = ({ icon, title, text, points }) => {
       lineHeight: "1.7",
 
       width: "100%",
+
+      color: "#555555",
     },
   };
 

@@ -33,6 +33,7 @@ const styles = {
     fontSize: "42px",
     marginBottom: "30px",
     fontWeight: "bold",
+    color:"#A202F0"
   },
 
   card: {
@@ -57,6 +58,7 @@ const styles = {
   title: {
     fontSize: "20px",
     marginBottom: "8px",
+    color:"#A202F0"
     
   },
 

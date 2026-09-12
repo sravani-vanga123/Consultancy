@@ -69,7 +69,7 @@ const Signup = () => {
         justifyContent: "center",
         alignItems: "center",
         minHeight: "100vh",
-        background: "beige",
+        background: "white",
         fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
         padding: "20px",
         boxSizing: "border-box",
@@ -92,7 +92,7 @@ const Signup = () => {
             textAlign: "center",
             marginTop: 0,
             marginBottom: "25px",
-            color: "#333",
+            color: "#A202F0",
           }}
         >
           Sign Up
@@ -233,7 +233,7 @@ const Signup = () => {
           style={{
             width: "100%",
             padding: "11px",
-            background: "purple",
+            background: "#A202F0",
             color: "white",
             border: "none",
             borderRadius: "5px",
@@ -285,7 +285,7 @@ const Signup = () => {
             textAlign: "center",
             fontSize: "14px",
             margin: 0,
-            color: "#444",
+            color: "#A202F0",
           }}
         >
           Already have an account?{" "}
@@ -293,7 +293,7 @@ const Signup = () => {
           <span
             onClick={handleLoginClick}
             style={{
-              color: "purple",
+              color: "#A202F0",
               cursor: "pointer",
               fontWeight: "bold",
               textDecoration: "underline",

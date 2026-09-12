@@ -8,7 +8,7 @@ const AboutUs = () => {
       style={{
         width: "100%",
         minHeight: "100vh",
-       background:    "linear-gradient(135deg, #F3E8FF 0%, #E9D5FF 50%, #FDF4FF 100%)",
+       background:    "white",
         fontFamily: "Futura, Trebuchet MS, Arial, sans-serif",
         padding: "40px 0",
         position: "relative",
@@ -37,6 +37,7 @@ const AboutUs = () => {
           style={{
             textAlign: "center",
             marginBottom: "20px",
+            color:"#A202F0"
           }}
         >
           ABOUT MOIN CONSULTANCY
